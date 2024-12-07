@@ -248,24 +248,127 @@ body {
     color: var(--teal); 
 }
 
-.ingredients, .directions, .sides {
+/* Ingredients and Directions Section */
+.ingredients-directions {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 2rem; 
     margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--white); 
 }
 
-.ingredients ul, .directions ol {
-    padding-left: 1.5rem;
+/* Individual Section Styling */
+.ingredients, .directions {
+    flex: 1; 
 }
 
-.sides {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.side-item {
-    width: 45%;
+.section-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    text-align: center;
+    color: var(--black);
+    text-align: left;
+}
+
+/* Ingredients List */
+.ingredients-list {
+    list-style-type: disc; 
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+/* Directions List */
+.directions-list {
+    list-style-type: decimal; 
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+/* Side Dishes Section */
+.side-dishes {
+    background-color: var(--teal); 
+    padding: 2rem 1rem;
+    border-radius: 8px; 
+    margin: 2rem 0; 
+    text-align: center; 
+}
+
+.side-dishes-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+/* Side Dishes Container */
+.side-dishes-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+/* Individual Side Dish */
+.side-dish {
+    text-align: center; 
+    flex: 1; 
+    max-width: 240px; 
+}
+
+.side-dish-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+}
+
+/* Side Dish Text */
+.side-dish-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.side-dish-description {
+    font-size: 0.9rem;
+    color: var(--black);
+    margin-bottom: 0.8rem;
+}
+
+/* Ratings Section */
+.side-dish-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    color: var(--black);
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.stars {
+    display: flex;
+    gap: 0.2rem; 
+}
+
+.star {
+    font-size: 1rem;
+    color: var(--white); 
+}
+
+.star.filled {
+    color: var(--orange); 
 }
 
 footer {
